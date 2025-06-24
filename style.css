@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: #0d1117;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+section {
+  padding: 3rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #0d1117;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.pricing li {
+  margin-bottom: 0.8rem;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #007acc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.project-card img {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card div {
+  flex: 1;
+}
+
+.github-button {
+  display: inline-block;
+  background: #007acc;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.github-button:hover {
+  background: #005fa3;
+}
+
+/* Scroll fade effect */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* About grid layout */
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-text {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+.about-scroll-container {
+  flex: 1 1 300px;
+  overflow-x: auto;
+  padding: 1rem 0;
+  white-space: nowrap;
+  min-width: 280px;
+}
+
+.about-scroll {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-scroll img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #007acc;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.about-scroll img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox thumbnail */
+.lightbox-thumbs img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 3px solid #007acc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lightbox-thumbs img:hover {
+  transform: scale(1.05);
+}
+
+/* Lightbox modal styles */
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lightbox-modal img.lightbox-image {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.lightbox-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.lightbox-nav .prev,
+.lightbox-nav .next {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}

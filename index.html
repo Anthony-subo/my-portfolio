@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Kiragu | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic" />
+      <h1>Anthony Kiragu</h1>
+      <p>Full Stack Developer | UI/UX Designer | Freelancer</p>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="fade-in">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m a creative full-stack developer with experience building applications in Python, JavaScript, HTML/CSS, and modern frameworks. I enjoy solving real-world problems with code and design. I’m open to freelance opportunities, collaborations, and long-term projects.</p>
+        <p><strong>Languages & Tools:</strong> Python, JavaScript, HTML, CSS, MongoDB, PyQt5, Git, VS Code</p>
+      </div>
+      <div class="lightbox-thumbs">
+        <img src="images/profile.jpg" alt="About 1" onclick="openLightbox('about', 0)" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing -->
+  <section id="services" class="fade-in">
+    <div class="container">
+      <h2>Services & Pricing</h2>
+      <ul class="pricing">
+        <li><strong>Static Website</strong>: Starting from $50</li>
+        <li><strong>Custom Web App</strong>: From $100+</li>
+        <li><strong>Desktop App (Python)</strong>: From $120+</li>
+        <li><strong>UI/UX Design</strong>: From $40 per screen</li>
+        <li><strong>Consulting & Bug Fixes</strong>: $15/hr</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="fade-in">
+    <div class="container">
+      <h2>My Projects</h2>
+
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1" onclick="openLightbox('projects', 0)" />
+        <div>
+          <h3>Bursary Application System</h3>
+          <p>Desktop app for bursary processing built with PyQt5 and MongoDB.</p>
+          <a href="https://github.com/YOUR_USERNAME/bursary-app" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2" onclick="openLightbox('projects', 1)" />
+        <div>
+          <h3>Personal Portfolio Website</h3>
+          <p>Responsive portfolio website hosted on GitHub Pages using HTML, CSS, and JS.</p>
+          <a href="https://github.com/YOUR_USERNAME/my-portfolio" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Link -->
+  <section id="github" class="fade-in">
+    <div class="container">
+      <h2>My GitHub</h2>
+      <p>Explore more of my work and open source contributions on GitHub.</p>
+      <a class="github-button" href="https://github.com/YOUR_USERNAME" target="_blank">Visit My GitHub →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: anthonykiragu.m@gmail.com</p>
+      <p>Phone: +254 74233 7438</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Anthony Kiragu. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal (shared for both About and Projects) -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="Full view" />
+    <div class="lightbox-nav">
+      <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+      <span class="next" onclick="changeSlide(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
