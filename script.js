@@ -22,6 +22,7 @@ const images = {
     "images/profile.jpg",
     "images/profile2.jpg",
     "images/profile3.jpg",
+    "images/profile3.jpg",
     "images/profile1.jpg"
   ],
   project1: [
