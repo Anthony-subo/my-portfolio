@@ -1,47 +1,71 @@
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
   color: #333;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
 }
 
+/* Layout Container */
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 2rem;
 }
 
+/* Header */
 header {
-  background-color: #0d1117;
-  color: #fff;
+  background: #0d1117;
+  color: white;
   text-align: center;
   padding: 4rem 2rem;
+  border-bottom: 6px solid #007acc;
 }
 
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white;
   margin-bottom: 1rem;
-  border: 4px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
   font-size: 2.5rem;
-  margin: 0;
+  margin: 0.5rem 0;
 }
 
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Sections */
 section {
   padding: 3rem 2rem;
   border-bottom: 1px solid #ddd;
+  background-color: #ffffffc9;
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  margin: 1rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
 }
 
+/* Headings */
 h2 {
   margin-bottom: 1rem;
   color: #1f2937;
+  font-size: 2rem;
+  border-left: 6px solid #007acc;
+  padding-left: 1rem;
 }
 
+/* Links */
 a {
   color: #007acc;
   text-decoration: none;
@@ -51,34 +75,31 @@ a:hover {
   text-decoration: underline;
 }
 
-footer {
-  background: #0d1117;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-}
-
+/* Pricing List */
 .pricing li {
   margin-bottom: 0.8rem;
+  font-size: 1.05rem;
 }
 
+/* Project Cards */
 .project-card {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  background: white;
-  padding: 1rem;
+  background: #fff;
+  padding: 1.2rem;
   margin-bottom: 1.5rem;
-  border-left: 4px solid #007acc;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-left: 5px solid #007acc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .project-card img {
-  width: 200px;
+  width: 240px;
   object-fit: cover;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 8px;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .project-card img:hover {
@@ -89,21 +110,23 @@ footer {
   flex: 1;
 }
 
+/* GitHub Button */
 .github-button {
   display: inline-block;
   background: #007acc;
   color: white;
-  padding: 0.7rem 1.2rem;
-  border-radius: 6px;
+  padding: 0.75rem 1.3rem;
+  border-radius: 8px;
   font-weight: bold;
   margin-top: 1rem;
+  transition: background 0.3s ease;
 }
 
 .github-button:hover {
   background: #005fa3;
 }
 
-/* Scroll fade effect */
+/* Fade-In Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -115,7 +138,7 @@ footer {
   transform: translateY(0);
 }
 
-/* About grid layout */
+/* About Grid */
 .about-grid {
   display: flex;
   flex-wrap: wrap;
@@ -128,41 +151,12 @@ footer {
   min-width: 280px;
 }
 
-.about-scroll-container {
-  flex: 1 1 300px;
-  overflow-x: auto;
-  padding: 1rem 0;
-  white-space: nowrap;
-  min-width: 3280px;
-}
-
-.about-scroll {
-  display: flex;
-  gap: 1rem;
-}
-
-.about-scroll img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 3px solid #007acc;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-
-.about-scroll img:hover {
-  transform: scale(1.05);
-}
-
-/* Lightbox thumbnail */
 .lightbox-thumbs img {
-  margin-left: 40px;
   width: 320px;
-  height: 430px;
+  height: 420px;
   object-fit: cover;
   border: 3px solid #007acc;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -171,11 +165,11 @@ footer {
   transform: scale(1.05);
 }
 
-/* Lightbox modal styles */
+/* Lightbox Modal */
 .lightbox-modal {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   left: 0; top: 0;
   width: 100%; height: 100%;
   background: rgba(0, 0, 0, 0.9);
@@ -204,7 +198,6 @@ footer {
   font-size: 3rem;
   color: white;
   cursor: pointer;
-  user-select: none;
 }
 
 .close {
@@ -214,4 +207,37 @@ footer {
   font-size: 2.5rem;
   color: white;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #0d1117;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+  border-top: 4px solid #007acc;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lightbox-thumbs img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-grid {
+    flex-direction: column;
+  }
 }
