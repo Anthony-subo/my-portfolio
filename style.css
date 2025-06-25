@@ -133,7 +133,7 @@ footer {
   overflow-x: auto;
   padding: 1rem 0;
   white-space: nowrap;
-  min-width: 280px;
+  min-width: 3280px;
 }
 
 .about-scroll {
@@ -157,8 +157,9 @@ footer {
 
 /* Lightbox thumbnail */
 .lightbox-thumbs img {
-  width: 220px;
-  height: 220px;
+  margin-left: 40px;
+  width: 320px;
+  height: 420px;
   object-fit: cover;
   border: 3px solid #007acc;
   border-radius: 8px;
