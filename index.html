@@ -20,15 +20,26 @@
   <section id="about" class="fade-in">
     <div class="container about-grid">
       <div class="about-text">
-     <h2>About Me</h2>
-      <p>I’m Anthony Kiragu, a versatile and passionate full-stack developer based in Nairobi, Kenya. I specialize in building interactive desktop applications, dynamic websites, and modern mobile apps. My approach blends creativity with technical precision to meet real-world needs.</p>
-      <p>I enjoy building complete systems—from intuitive frontends to robust backends—and integrating with modern databases and APIs. I also have strong experience with mobile-first design and cross-platform apps using React Native and Expo. Currently, I’m focused on developing web and mobile applications using modern technologies.</p>
-      <p><strong>Languages & Frameworks:</strong> Python, JavaScript, Java, HTML, CSS, React, React Native, Node.js, PyQt5, Flask</p>
-      <p><strong>Databases & Tools:</strong> SQLite, MySQL, MongoDB, Firebase, Git, VS Code, Figma</p>
-      <p><strong>Focus Areas:</strong> Mobile Apps (React Native + Expo), Web Development (React/Node/Flask), Desktop Software (Python + PyQt5), UI/UX Design, Automation, Database Design</p>
+        <h2>About Me</h2>
+        <p>I’m Anthony Kiragu, a versatile and passionate full-stack developer based in Nairobi, Kenya. I specialize in building interactive desktop applications, dynamic websites, and modern mobile apps. I hold a <strong>Responsive Web Design Certification</strong> from FreeCodeCamp.</p>
+        <p>I enjoy building complete systems—from intuitive frontends to robust backends—and integrating with modern databases and APIs. I also have strong experience with mobile-first design and cross-platform apps using React Native and Expo. Currently, I’m focused on developing web and mobile applications using modern technologies.</p>
+        <p><strong>Languages & Frameworks:</strong> Python, JavaScript, Java, HTML, CSS, React, React Native, Node.js, PyQt5, Flask</p>
+        <p><strong>Databases & Tools:</strong> SQLite, MySQL, MongoDB, Firebase, Git, VS Code, Figma</p>
+        <p><strong>Focus Areas:</strong> Mobile Apps (React Native + Expo), Web Development (React/Node/Flask), Desktop Software (Python + PyQt5), UI/UX Design, Automation, Database Design</p>
       </div>
       <div class="lightbox-thumbs">
         <img src="images/profile.jpg" alt="About 1" onclick="openLightbox('about', 0)" />
+      </div>
+    </div>
+  </section>
+  <!-- Certifications -->
+  <section id="certifications" class="fade-in">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="certification-card">
+        <h3>Responsive Web Design Certification</h3>
+        <p>FreeCodeCamp – Completed July 2025</p>
+        <a href="https://www.freecodecamp.org/certification/AnthonyKiraguMaina/responsive-web-design" target="_blank">View Certificate →</a>
       </div>
     </div>
   </section>
@@ -71,7 +82,6 @@
         </div>
       </div>
 
-      <!-- Finance Tracker -->
       <div class="project-card">
         <img src="images/finance-tracker.jpg" alt="Finance Tracker App" onclick="openLightbox('project3', 0)" />
         <div>
@@ -81,7 +91,6 @@
         </div>
       </div>
 
-      <!-- Airport Chatbot -->
       <div class="project-card">
         <img src="images/profil.jpg" alt="Airport Chatbot" onclick="openLightbox('project4', 0)" />
         <div>
@@ -93,7 +102,7 @@
     </div>
   </section>
 
-  <!-- GitHub Link -->
+<!-- GitHub Link -->
   <section id="github" class="fade-in">
     <div class="container">
       <h2>My GitHub</h2>
@@ -103,27 +112,27 @@
   </section>
 
   <!-- Contact -->
-<section id="contact" class="fade-in">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:anthonykiragu.m@gmail.com">anthonykiragu.m@gmail.com</a></p>
-    <p>Phone: <a href="tel:+254742337438">+254 74233 7438</a></p>
-    <p>GitHub: <a href="https://github.com/anthony-subo" target="_blank">github.com/anthony-subo</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/anthony-kiragu-059b57254/" target="_blank">linkedin.com/in/anthony-kiragu</a></p>
-    <p>Location: Nairobi, Kenya</p>
-    <p>Freelance Availability: <strong>Open for new projects</strong></p>
-    <p><a href="mailto:anthonykiragu.m@gmail.com" class="github-button">Send a Message →</a></p>
-  </div>
-</section>
-
+  <section id="contact" class="fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:anthonykiragu.m@gmail.com">anthonykiragu.m@gmail.com</a></p>
+      <p>Phone: <a href="tel:+254742337438">+254 74233 7438</a></p>
+      <p>GitHub: <a href="https://github.com/anthony-subo" target="_blank">github.com/anthony-subo</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anthony-kiragu-059b57254/" target="_blank">linkedin.com/in/anthony-kiragu</a></p>
+      <p>Location: Nairobi, Kenya</p>
+      <p>Freelance Availability: <strong>Open for new projects</strong></p>
+      <p><a href="mailto:anthonykiragu.m@gmail.com" class="github-button">Send a Message →</a></p>
+    </div>
+  </section>
 
   <footer>
     <div class="container">
       <p>&copy; 2025 Anthony Kiragu. All Rights Reserved.</p>
+      <p>Certified in Responsive Web Design – FreeCodeCamp</p>
     </div>
   </footer>
 
-  <!-- Lightbox Modal (shared for both About and Projects) -->
+  <!-- Lightbox Modal -->
   <div id="lightbox-modal" class="lightbox-modal">
     <span class="close" onclick="closeLightbox()">&times;</span>
     <img class="lightbox-image" id="lightbox-image" src="" alt="Full view" />
@@ -134,6 +143,5 @@
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
